@@ -42,15 +42,16 @@ const useStyles = makeStyles(() => ({
   title: {
     fontWeight: 500,
     fontSize: '2rem',
-    color: '#fff'
+    color: '#fff',
+    textAlign: 'center'
   },
   subtitle: {
-    fontFamily: 'Montserrat',
     color: '#fff',
     opacity: 0.87,
-    marginTop: '2rem',
+    marginTop: '1rem',
     fontWeight: 500,
-    fontSize: 14
+    fontSize: '1rem',
+    textAlign: 'center'
   }
 }));
 
