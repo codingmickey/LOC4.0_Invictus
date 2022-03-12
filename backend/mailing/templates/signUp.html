@@ -1,0 +1,1679 @@
+<!-- <html>
+  <head>
+    <title>Reset Password</title>
+  </head>
+  <style>
+    body {
+      color: #000;
+      font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  </style>
+  <body>
+    <h1>Hello (<%= name %>)</h1>
+    <p>
+      A password reset was requested for this email address (<%= emailAddress
+      %>). If you requested this reset, click the link below to reset your
+      password:
+    </p>
+    <p><a href="<%= resetLink %>">Reset Your Password</a></p>
+  </body>
+</html> -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="telephone=no" name="format-detection" />
+    <title></title>
+    <!--[if (mso 16)]>
+      <style type="text/css">
+        a {
+          text-decoration: none;
+        }
+      </style>
+    <![endif]-->
+    <!--[if gte mso 9
+      ]><style>
+        sup {
+          font-size: 100% !important;
+        }
+      </style><!
+    [endif]-->
+    <!--[if gte mso 9]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG></o:AllowPNG>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+    <!--[if !mso]><!-- -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <!--<![endif]-->
+  </head>
+
+  <body>
+      <div class="es-wrapper-color">
+          <!--[if gte mso 9]>
+            <v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
+                <v:fill
+                type="tile"
+                src="https://tlr.stripocdn.email/content/guids/CABINET_0e1abc4733ae23470ca50d2143abcff1/images/bgwar.png"
+                color="#f6f6f6"
+                origin="0.5, 0"
+                position="0.5, 0"
+                ></v:fill>
+            </v:background>
+            <![endif]-->
+            <table
+        class="es-wrapper"
+        width="100%"
+        cellspacing="0"
+        cellpadding="0"
+        background="https://tlr.stripocdn.email/content/guids/CABINET_0e1abc4733ae23470ca50d2143abcff1/images/bgwar.png"
+        style="background-position: center top"
+      >
+        <tbody>
+          <tr>
+            <td class="esd-email-paddings es-m-margin" valign="top">
+              <table
+                class="esd-header-popover es-header"
+                cellspacing="0"
+                cellpadding="0"
+                align="center"
+              >
+                <tbody>
+                  <tr>
+                    <td class="esd-stripe" align="center">
+                      <table
+                        class="es-header-body"
+                        width="600"
+                        cellspacing="0"
+                        cellpadding="0"
+                        align="center"
+                        style="background-color: transparent"
+                      >
+                        <tbody>
+                          <tr>
+                            <td class="esd-structure" align="left">
+                              <table
+                                cellpadding="0"
+                                cellspacing="0"
+                                width="100%"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td
+                                      width="600"
+                                      class="esd-container-frame"
+                                      align="center"
+                                      valign="top"
+                                    >
+                                      <table
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        width="100%"
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="esd-block-spacer"
+                                              height="30"
+                                            ></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="
+                                esd-structure
+                                es-p30t es-p30b es-p20r es-p20l
+                              "
+                              align="left"
+                              style="
+                                border-radius: 15px 15px 0px 0px;
+                                background-color: #ffffff;
+                              "
+                              bgcolor="#ffffff"
+                            >
+                              <!--[if mso]><table width="560" cellpadding="0" cellspacing="0"><tr><td width="205" valign="top"><![endif]-->
+                              <table
+                                cellspacing="0"
+                                cellpadding="0"
+                                align="left"
+                                class="es-left"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td
+                                      class="esd-container-frame es-m-p20b"
+                                      width="205"
+                                      align="left"
+                                    >
+                                      <table
+                                        width="100%"
+                                        cellspacing="0"
+                                        cellpadding="0"
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              align="left"
+                                              class="esd-block-image es-m-txt-c"
+                                              style="font-size: 0px"
+                                            >
+                                              <a target="_blank"
+                                                ><img
+                                                  src="https://tlr.stripocdn.email/content/guids/CABINET_0e1abc4733ae23470ca50d2143abcff1/images/logouk.png"
+                                                  alt
+                                                  style="display: block"
+                                                  width="140"
+                                              /></a>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!--[if mso]></td><td width="20"></td><td width="335" valign="top"><![endif]-->
+                              <table
+                                cellpadding="0"
+                                cellspacing="0"
+                                class="es-right"
+                                align="right"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td
+                                      width="335"
+                                      align="left"
+                                      class="esd-container-frame"
+                                    >
+                                      <table
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        width="100%"
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              align="right"
+                                              class="esd-block-text es-m-txt-c"
+                                            >
+                                              <h3>Stop War in Ukraine</h3>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!--[if mso]></td></tr></table><![endif]-->
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table
+                class="es-content"
+                cellspacing="0"
+                cellpadding="0"
+                align="center"
+              >
+                <tbody>
+                  <tr>
+                    <td class="esd-stripe" align="center">
+                      <table
+                        class="es-content-body"
+                        width="600"
+                        cellspacing="0"
+                        cellpadding="0"
+                        align="center"
+                        style="background-color: transparent"
+                      >
+                        <tbody>
+                          <tr>
+                            <td
+                              class="esd-structure"
+                              align="left"
+                              bgcolor="#ffffff"
+                              style="background-color: #ffffff"
+                            >
+                              <table
+                                cellpadding="0"
+                                cellspacing="0"
+                                width="100%"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td
+                                      width="600"
+                                      class="esd-container-frame"
+                                      align="center"
+                                      valign="top"
+                                    >
+                                      <table
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        width="100%"
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="esd-block-image"
+                                              style="font-size: 0px"
+                                            >
+                                              <a target="_blank"
+                                                ><img
+                                                  class="adapt-img"
+                                                  src="https://tlr.stripocdn.email/content/guids/CABINET_0e1abc4733ae23470ca50d2143abcff1/images/4baf1acc47.jpg"
+                                                  alt
+                                                  style="display: block"
+                                                  width="600"
+                                              /></a>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="
+                                esd-structure
+                                es-p25t es-p15b es-p25r es-p25l
+                              "
+                              align="left"
+                              bgcolor="#ffffff"
+                              style="background-color: #ffffff"
+                            >
+                              <table
+                                width="100%"
+                                cellspacing="0"
+                                cellpadding="0"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td
+                                      class="esd-container-frame"
+                                      width="550"
+                                      valign="top"
+                                      align="center"
+                                    >
+                                      <table
+                                        width="100%"
+                                        cellspacing="0"
+                                        cellpadding="0"
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="esd-block-text es-p15b"
+                                            >
+                                              <h1>Спасите своих детей!</h1>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td
+                                              align="left"
+                                              class="esd-block-text es-p10t"
+                                            >
+                                              <p>
+                                                <h1>Hello sir </h1>
+                                                <strong
+                                                  >Уважаемые россияне!</strong
+                                                ><br /><br />На Украинской земле
+                                                идёт война, которую называют
+                                                спецоперацией. Но это жестокая
+                                                война. Проливается кровь как
+                                                наших, так и ваших близких.<br /><br />Солдат
+                                                РФ, которые еще по сути дети,
+                                                отправляют на войну с Украиной.
+                                                Однако, их там никто не ждет и
+                                                вызволителями, как говорят по
+                                                ТВ, не считают.<br /><br />Конечно,
+                                                в новостях говорят, что
+                                                спецоперация проходит хорошо,
+                                                практически без жертв. Однако,
+                                                это не так. Позвольте
+                                                предоставить вам немного
+                                                реальных цифр, которые доступны
+                                                в любом открытом независимом
+                                                источнике.
+                                              </p>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="
+                                esd-structure
+                                es-p15t es-p25b es-p20r es-p20l
+                              "
+                              align="left"
+                              bgcolor="#ffffff"
+                              style="background-color: #ffffff"
+                            >
+                              <table
+                                cellpadding="0"
+                                cellspacing="0"
+                                width="100%"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td
+                                      width="560"
+                                      class="esd-container-frame"
+                                      align="center"
+                                      valign="top"
+                                    >
+                                      <table
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        width="100%"
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="
+                                                esd-block-text
+                                                es-p15r es-p15l
+                                              "
+                                              esd-links-color="#020202"
+                                            >
+                                              <h3>
+                                                <strong
+                                                  >Единиц техники РФ уничтожено
+                                                  <a
+                                                    target="_blank"
+                                                    style="color: #020202"
+                                                    href="https://www.facebook.com/GeneralStaff.ua"
+                                                    >украинской армией</a
+                                                  >&nbsp;</strong
+                                                >по состоянию на<strong
+                                                  >&nbsp;10:00
+                                                  7.03.2022:</strong
+                                                >
+                                              </h3>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="
+                                esd-structure
+                                es-p5b es-p20r es-p20l es-m-p40r es-m-p40l
+                              "
+                              align="left"
+                              bgcolor="#ffffff"
+                              style="background-color: #ffffff"
+                            >
+                              <!--[if mso]><table width="560" cellpadding="0" cellspacing="0"><tr><td width="143" valign="top"><![endif]-->
+                              <table
+                                cellpadding="0"
+                                cellspacing="0"
+                                align="left"
+                                class="es-left"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td
+                                      width="133"
+                                      class="esd-container-frame es-m-p20b"
+                                      align="left"
+                                    >
+                                      <table
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        width="100%"
+                                        bgcolor="#526547"
+                                        style="
+                                          background-color: #526547;
+                                          border-radius: 4px;
+                                          border-collapse: separate;
+                                        "
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="
+                                                esd-block-text
+                                                es-p10t es-m-txt-c
+                                              "
+                                            >
+                                              <h2
+                                                style="
+                                                  font-size: 36px !important;
+                                                  color: #ffffff;
+                                                "
+                                              >
+                                                290
+                                              </h2>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="
+                                                esd-block-image
+                                                es-p10r es-p10l
+                                              "
+                                              style="font-size: 0px"
+                                            >
+                                              <a target="_blank"
+                                                ><img
+                                                  src="https://tlr.stripocdn.email/content/guids/CABINET_0e1abc4733ae23470ca50d2143abcff1/images/tank_2.png"
+                                                  alt
+                                                  style="display: block"
+                                                  width="64"
+                                              /></a>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="esd-block-text es-p10b"
+                                            >
+                                              <p
+                                                style="
+                                                  font-size: 12px;
+                                                  color: #ffffff;
+                                                "
+                                              >
+                                                <strong>Танк</strong>
+                                              </p>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="esd-block-spacer"
+                                              height="17"
+                                            ></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                    <td class="es-hidden" width="10"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!--[if mso]></td><td width="143" valign="top"><![endif]-->
+                              <table
+                                cellpadding="0"
+                                cellspacing="0"
+                                class="es-left"
+                                align="left"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td
+                                      width="133"
+                                      class="esd-container-frame es-m-p20b"
+                                      align="left"
+                                    >
+                                      <table
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        width="100%"
+                                        bgcolor="#526547"
+                                        style="
+                                          background-color: #526547;
+                                          border-radius: 4px;
+                                          border-collapse: separate;
+                                        "
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="
+                                                esd-block-text
+                                                es-p10t es-m-txt-c
+                                              "
+                                            >
+                                              <h2
+                                                style="
+                                                  font-size: 36px !important;
+                                                  color: #ffffff;
+                                                "
+                                              >
+                                                999
+                                              </h2>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="esd-block-image es-p10"
+                                              style="font-size: 0px"
+                                            >
+                                              <a target="_blank"
+                                                ><img
+                                                  src="https://tlr.stripocdn.email/content/guids/CABINET_0e1abc4733ae23470ca50d2143abcff1/images/armoredvehicle.png"
+                                                  alt
+                                                  style="display: block"
+                                                  width="79"
+                                              /></a>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="esd-block-text es-p10b"
+                                            >
+                                              <p
+                                                style="
+                                                  font-size: 12px;
+                                                  color: #ffffff;
+                                                "
+                                              >
+                                                <strong>Единиц ББМ</strong>
+                                              </p>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="esd-block-spacer"
+                                              height="17"
+                                            ></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                    <td class="es-hidden" width="10"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!--[if mso]></td><td width="131" valign="top"><![endif]-->
+                              <table
+                                cellpadding="0"
+                                cellspacing="0"
+                                class="es-left"
+                                align="left"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td
+                                      width="131"
+                                      class="esd-container-frame es-m-p20b"
+                                      align="left"
+                                    >
+                                      <table
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        width="100%"
+                                        bgcolor="#526547"
+                                        style="
+                                          background-color: #526547;
+                                          border-radius: 4px;
+                                          border-collapse: separate;
+                                        "
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="
+                                                esd-block-text
+                                                es-p10t es-m-txt-c
+                                              "
+                                            >
+                                              <h2
+                                                style="
+                                                  font-size: 36px !important;
+                                                  color: #ffffff;
+                                                "
+                                              >
+                                                117
+                                              </h2>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="esd-block-image es-p10"
+                                              style="font-size: 0px"
+                                            >
+                                              <a target="_blank"
+                                                ><img
+                                                  src="https://tlr.stripocdn.email/content/guids/CABINET_0e1abc4733ae23470ca50d2143abcff1/images/artillery_2.png"
+                                                  alt
+                                                  style="display: block"
+                                                  width="42"
+                                              /></a>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="esd-block-text es-p10b"
+                                            >
+                                              <p
+                                                style="
+                                                  font-size: 12px;
+                                                  color: #ffffff;
+                                                "
+                                              >
+                                                <strong
+                                                  >Артиллерийских систем</strong
+                                                >
+                                              </p>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!--[if mso]></td><td width="10"></td><td width="133" valign="top"><![endif]-->
+                              <table
+                                cellpadding="0"
+                                cellspacing="0"
+                                class="es-right"
+                                align="right"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td
+                                      width="133"
+                                      class="esd-container-frame"
+                                      align="left"
+                                    >
+                                      <table
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        width="100%"
+                                        bgcolor="#526547"
+                                        style="
+                                          background-color: #526547;
+                                          border-radius: 4px;
+                                          border-collapse: separate;
+                                        "
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="
+                                                esd-block-text
+                                                es-p10t es-m-txt-c
+                                              "
+                                            >
+                                              <h2
+                                                style="
+                                                  font-size: 36px !important;
+                                                  color: #ffffff;
+                                                "
+                                              >
+                                                68
+                                              </h2>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="
+                                                esd-block-image
+                                                es-p5t es-p5b es-p10r es-p10l
+                                              "
+                                              style="font-size: 0px"
+                                            >
+                                              <a target="_blank"
+                                                ><img
+                                                  src="https://tlr.stripocdn.email/content/guids/CABINET_0e1abc4733ae23470ca50d2143abcff1/images/militaryhelicopter.png"
+                                                  alt
+                                                  style="display: block"
+                                                  width="54"
+                                              /></a>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="esd-block-text es-p10b"
+                                            >
+                                              <p
+                                                style="
+                                                  font-size: 12px;
+                                                  color: #ffffff;
+                                                "
+                                              >
+                                                <strong>Вертолет</strong>
+                                              </p>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="esd-block-spacer"
+                                              height="17"
+                                            ></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!--[if mso]></td></tr></table><![endif]-->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="
+                                esd-structure
+                                es-p5t
+                                es-p10b
+                                es-p20r
+                                es-p20l
+                                es-m-p40r
+                                es-m-p40l
+                              "
+                              align="left"
+                              bgcolor="#ffffff"
+                              style="background-color: #ffffff"
+                            >
+                              <!--[if mso]><table width="560" cellpadding="0" cellspacing="0"><tr><td width="143" valign="top"><![endif]-->
+                              <table
+                                cellpadding="0"
+                                cellspacing="0"
+                                align="left"
+                                class="es-left"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td
+                                      width="133"
+                                      class="esd-container-frame es-m-p20b"
+                                      align="left"
+                                    >
+                                      <table
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        width="100%"
+                                        bgcolor="#526547"
+                                        style="
+                                          background-color: #526547;
+                                          border-radius: 4px;
+                                          border-collapse: separate;
+                                        "
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="
+                                                esd-block-text
+                                                es-p10t es-m-txt-c
+                                              "
+                                            >
+                                              <h2
+                                                style="
+                                                  font-size: 36px !important;
+                                                  color: #ffffff;
+                                                "
+                                              >
+                                                454
+                                              </h2>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="
+                                                esd-block-image
+                                                es-p5t es-p5b es-p10r es-p10l
+                                              "
+                                              style="font-size: 0px"
+                                            >
+                                              <a target="_blank"
+                                                ><img
+                                                  src="https://tlr.stripocdn.email/content/guids/CABINET_0e1abc4733ae23470ca50d2143abcff1/images/armored.png"
+                                                  alt
+                                                  style="display: block"
+                                                  width="54"
+                                              /></a>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="esd-block-text es-p10b"
+                                            >
+                                              <p
+                                                style="
+                                                  font-size: 12px;
+                                                  color: #ffffff;
+                                                "
+                                              >
+                                                <strong
+                                                  >Военный<br />автомобиль</strong
+                                                >
+                                              </p>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                    <td class="es-hidden" width="10"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!--[if mso]></td><td width="143" valign="top"><![endif]-->
+                              <table
+                                cellpadding="0"
+                                cellspacing="0"
+                                class="es-left"
+                                align="left"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td
+                                      width="133"
+                                      class="esd-container-frame es-m-p20b"
+                                      align="left"
+                                    >
+                                      <table
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        width="100%"
+                                        bgcolor="#526547"
+                                        style="
+                                          background-color: #526547;
+                                          border-radius: 4px;
+                                          border-collapse: separate;
+                                        "
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="
+                                                esd-block-text
+                                                es-p10t es-m-txt-c
+                                              "
+                                            >
+                                              <h2
+                                                style="
+                                                  font-size: 36px !important;
+                                                  color: #ffffff;
+                                                "
+                                              >
+                                                50
+                                              </h2>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="
+                                                esd-block-image
+                                                es-p5t es-p5b es-p10r es-p10l
+                                              "
+                                              style="font-size: 0px"
+                                            >
+                                              <a target="_blank"
+                                                ><img
+                                                  src="https://tlr.stripocdn.email/content/guids/CABINET_0e1abc4733ae23470ca50d2143abcff1/images/artillery_3.png"
+                                                  alt
+                                                  style="display: block"
+                                                  width="54"
+                                              /></a>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="esd-block-text es-p10b"
+                                            >
+                                              <p
+                                                style="
+                                                  font-size: 12px;
+                                                  color: #ffffff;
+                                                "
+                                              >
+                                                <strong
+                                                  >Единица<br />РСЗО
+                                                  ГРАД</strong
+                                                >
+                                              </p>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                    <td class="es-hidden" width="10"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!--[if mso]></td><td width="132" valign="top"><![endif]-->
+                              <table
+                                cellpadding="0"
+                                cellspacing="0"
+                                class="es-left"
+                                align="left"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td
+                                      width="132"
+                                      class="esd-container-frame es-m-p20b"
+                                      align="left"
+                                    >
+                                      <table
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        width="100%"
+                                        bgcolor="#526547"
+                                        style="
+                                          background-color: #526547;
+                                          border-radius: 4px;
+                                          border-collapse: separate;
+                                        "
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="
+                                                esd-block-text
+                                                es-p10t es-m-txt-c
+                                              "
+                                            >
+                                              <h2
+                                                style="
+                                                  font-size: 36px !important;
+                                                  color: #ffffff;
+                                                "
+                                              >
+                                                46
+                                              </h2>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="
+                                                esd-block-image
+                                                es-p10r es-p10l
+                                              "
+                                              style="font-size: 0px"
+                                            >
+                                              <a target="_blank"
+                                                ><img
+                                                  src="https://tlr.stripocdn.email/content/guids/CABINET_0e1abc4733ae23470ca50d2143abcff1/images/aircraft_1.png"
+                                                  alt
+                                                  style="display: block"
+                                                  width="64"
+                                              /></a>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="esd-block-text es-p10b"
+                                            >
+                                              <p
+                                                style="
+                                                  font-size: 12px;
+                                                  color: #ffffff;
+                                                "
+                                              >
+                                                <strong
+                                                  >Военных<br />самолётов</strong
+                                                >
+                                              </p>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!--[if mso]></td><td width="10"></td><td width="132" valign="top"><![endif]-->
+                              <table
+                                cellpadding="0"
+                                cellspacing="0"
+                                class="es-right"
+                                align="right"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td
+                                      width="132"
+                                      class="esd-container-frame"
+                                      align="left"
+                                    >
+                                      <table
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        width="100%"
+                                        bgcolor="#526547"
+                                        style="
+                                          background-color: #526547;
+                                          border-radius: 4px;
+                                          border-collapse: separate;
+                                        "
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="
+                                                esd-block-text
+                                                es-p10t es-m-txt-c
+                                              "
+                                            >
+                                              <h2
+                                                style="
+                                                  font-size: 36px !important;
+                                                  color: #ffffff;
+                                                "
+                                              >
+                                                3
+                                              </h2>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="
+                                                esd-block-image
+                                                es-p10r es-p10l
+                                              "
+                                              style="font-size: 0px"
+                                            >
+                                              <a target="_blank"
+                                                ><img
+                                                  src="https://tlr.stripocdn.email/content/guids/CABINET_0e1abc4733ae23470ca50d2143abcff1/images/ship_2.png"
+                                                  alt
+                                                  style="display: block"
+                                                  width="64"
+                                              /></a>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="esd-block-text es-p10b"
+                                            >
+                                              <p
+                                                style="
+                                                  font-size: 12px;
+                                                  color: #ffffff;
+                                                "
+                                              >
+                                                <strong
+                                                  >Военных<br />корабля</strong
+                                                >
+                                              </p>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!--[if mso]></td></tr></table><![endif]-->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="
+                                esd-structure
+                                es-p15t es-p20b es-p20r es-p20l
+                              "
+                              align="left"
+                              bgcolor="#ffffff"
+                              style="background-color: #ffffff"
+                            >
+                              <table
+                                cellpadding="0"
+                                cellspacing="0"
+                                width="100%"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td
+                                      width="560"
+                                      class="esd-container-frame"
+                                      align="center"
+                                      valign="top"
+                                    >
+                                      <table
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        width="100%"
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="
+                                                esd-block-text
+                                                es-p15r es-p15l
+                                              "
+                                              esd-links-color="#020202"
+                                            >
+                                              <h3>
+                                                <a
+                                                  target="_blank"
+                                                  style="color: #020202"
+                                                  href="https://www.facebook.com/GeneralStaff.ua"
+                                                  >Жертвы среди военных</a
+                                                >
+                                                РФ по состоянию на 10:00
+                                                7.03.2022:
+                                              </h3>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="
+                                esd-structure
+                                es-p5t
+                                es-p10b
+                                es-p20r
+                                es-p20l
+                                es-m-p40r
+                                es-m-p40l
+                              "
+                              align="left"
+                              bgcolor="#ffffff"
+                              style="background-color: #ffffff"
+                            >
+                              <!--[if mso]><table width="560" cellpadding="0" cellspacing="0"><tr><td width="214" valign="top"><![endif]-->
+                              <table
+                                cellpadding="0"
+                                cellspacing="0"
+                                class="es-left"
+                                align="left"
+                              >
+                                <tbody>
+                                  <tr class="es-mobile-hidden">
+                                    <td
+                                      width="204"
+                                      class="esd-container-frame es-m-p20b"
+                                      align="left"
+                                    >
+                                      <table
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        width="100%"
+                                        style="
+                                          border-radius: 4px;
+                                          border-collapse: separate;
+                                        "
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="esd-block-spacer"
+                                              height="5"
+                                            ></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                    <td class="es-hidden" width="10"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!--[if mso]></td><td width="133" valign="top"><![endif]-->
+                              <table
+                                cellpadding="0"
+                                cellspacing="0"
+                                class="es-left"
+                                align="left"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td
+                                      width="133"
+                                      class="esd-container-frame es-m-p20b"
+                                      align="left"
+                                    >
+                                      <table
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        width="100%"
+                                        bgcolor="#526547"
+                                        style="
+                                          background-color: #526547;
+                                          border-radius: 4px;
+                                          border-collapse: separate;
+                                        "
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="
+                                                esd-block-text
+                                                es-p10t es-m-txt-c
+                                              "
+                                            >
+                                              <h2
+                                                style="
+                                                  font-size: 36px !important;
+                                                  color: #ffffff;
+                                                "
+                                              >
+                                                11 000
+                                              </h2>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="esd-block-image es-p10"
+                                              style="font-size: 0px"
+                                            >
+                                              <a target="_blank"
+                                                ><img
+                                                  src="https://tlr.stripocdn.email/content/guids/CABINET_0e1abc4733ae23470ca50d2143abcff1/images/flanders.png"
+                                                  alt
+                                                  style="display: block"
+                                                  width="44"
+                                              /></a>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="esd-block-text es-p10b"
+                                            >
+                                              <p
+                                                style="
+                                                  font-size: 12px;
+                                                  color: #ffffff;
+                                                "
+                                              >
+                                                <strong
+                                                  >Cолдат РФ<br />погибло</strong
+                                                >
+                                              </p>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!--[if mso]></td><td width="10"></td><td width="203" valign="top"><![endif]-->
+                              <table
+                                cellpadding="0"
+                                cellspacing="0"
+                                class="es-right"
+                                align="right"
+                              >
+                                <tbody>
+                                  <tr class="es-mobile-hidden">
+                                    <td
+                                      width="203"
+                                      class="esd-container-frame"
+                                      align="left"
+                                    >
+                                      <table
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        width="100%"
+                                        style="
+                                          border-radius: 4px;
+                                          border-collapse: separate;
+                                        "
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="esd-block-spacer"
+                                              height="5"
+                                            ></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!--[if mso]></td></tr></table><![endif]-->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="
+                                esd-structure
+                                es-p20t es-p30b es-p25r es-p25l es-m-p10t
+                              "
+                              align="left"
+                              bgcolor="#ffffff"
+                              style="
+                                background-color: #ffffff;
+                                border-radius: 0px 0px 15px 15px;
+                              "
+                            >
+                              <table
+                                width="100%"
+                                cellspacing="0"
+                                cellpadding="0"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td
+                                      class="esd-container-frame"
+                                      width="550"
+                                      valign="top"
+                                      align="center"
+                                    >
+                                      <table
+                                        width="100%"
+                                        cellspacing="0"
+                                        cellpadding="0"
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              align="left"
+                                              class="esd-block-text"
+                                            >
+                                              <p><strong>И главное:</strong></p>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td
+                                              align="left"
+                                              class="esd-block-text es-p10t"
+                                            >
+                                              <p>
+                                                По ТВ говорят, что Украина вас
+                                                звала, как освободителей.
+                                                Однако, это не так. Иначе, как
+                                                объяснить, что помимо срочной
+                                                армии, защищать свой край
+                                                добровольно вышло более
+                                                <strong>100 000 людей </strong
+                                                >со всей Украины, включая
+                                                Луганск, Донецк, Харьков и
+                                                Одессу? И это
+                                                <strong
+                                                  >за 4 дня боевых
+                                                  действий</strong
+                                                >. А те, кто остался дома,
+                                                записался в ряды территориальной
+                                                обороны.<br /><br /><strong
+                                                  >В Украине нет никакой
+                                                  гражданской войны</strong
+                                                >, как вам нагло врут по ТВ.
+                                                <strong
+                                                  >Народ Украины един!</strong
+                                                ><br /><strong
+                                                  >Народ Украины борется за свою
+                                                  свободу</strong
+                                                >. А за что гибнут ваши дети,
+                                                ваши солдаты?<br /><br />Выходите
+                                                в своём городе на митинг против
+                                                войны с Украиной. На митинг за
+                                                МИР! Вы ещё можете спасти своих
+                                                детей, своих близких.
+                                              </p>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table
+                class="esd-footer-popover es-footer"
+                cellspacing="0"
+                cellpadding="0"
+                align="center"
+              >
+                <tbody>
+                  <tr>
+                    <td class="esd-stripe" align="center">
+                      <table
+                        class="es-footer-body"
+                        width="600"
+                        cellspacing="0"
+                        cellpadding="0"
+                        bgcolor="#ffffff"
+                        align="center"
+                      >
+                        <tbody>
+                          <tr>
+                            <td
+                              class="
+                                esd-structure
+                                es-p35t es-p35b es-p20r es-p20l
+                              "
+                              align="left"
+                            >
+                              <table
+                                cellspacing="0"
+                                cellpadding="0"
+                                width="100%"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td
+                                      class="esd-container-frame"
+                                      width="560"
+                                      align="left"
+                                    >
+                                      <table
+                                        width="100%"
+                                        cellspacing="0"
+                                        cellpadding="0"
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="esd-block-social"
+                                              style="font-size: 0"
+                                            >
+                                              <table
+                                                cellpadding="0"
+                                                cellspacing="0"
+                                                class="
+                                                  es-table-not-adapt es-social
+                                                "
+                                              >
+                                                <tbody>
+                                                  <tr>
+                                                    <td
+                                                      align="center"
+                                                      valign="top"
+                                                      class="es-p10r"
+                                                    >
+                                                      <a
+                                                        target="_blank"
+                                                        href="https://www.facebook.com/stripoeditor/"
+                                                        ><img
+                                                          src="https://tlr.stripocdn.email/content/assets/img/social-icons/circle-colored/facebook-circle-colored.png"
+                                                          alt="Fb"
+                                                          title="Facebook"
+                                                          width="32"
+                                                      /></a>
+                                                    </td>
+                                                    <td
+                                                      align="center"
+                                                      valign="top"
+                                                      class="es-p10r"
+                                                    >
+                                                      <a
+                                                        target="_blank"
+                                                        href="https://twitter.com/Stripo_email"
+                                                        ><img
+                                                          src="https://tlr.stripocdn.email/content/assets/img/social-icons/circle-colored/twitter-circle-colored.png"
+                                                          alt="Tw"
+                                                          title="Twitter"
+                                                          width="32"
+                                                      /></a>
+                                                    </td>
+                                                    <td
+                                                      align="center"
+                                                      valign="top"
+                                                      class="es-p10r"
+                                                    >
+                                                      <a
+                                                        target="_blank"
+                                                        href="https://www.instagram.com/stripo.email/"
+                                                        ><img
+                                                          src="https://tlr.stripocdn.email/content/assets/img/social-icons/circle-colored/instagram-circle-colored.png"
+                                                          alt="Ig"
+                                                          title="Instagram"
+                                                          width="32"
+                                                      /></a>
+                                                    </td>
+                                                    <td
+                                                      align="center"
+                                                      valign="top"
+                                                      class="es-p10r"
+                                                    >
+                                                      <a
+                                                        target="_blank"
+                                                        href="https://www.youtube.com/channel/UCnPMarkPEGzk-3fTM9Jxgcw"
+                                                        ><img
+                                                          src="https://tlr.stripocdn.email/content/assets/img/social-icons/circle-colored/youtube-circle-colored.png"
+                                                          alt="Yt"
+                                                          title="Youtube"
+                                                          width="32"
+                                                      /></a>
+                                                    </td>
+                                                    <td
+                                                      align="center"
+                                                      valign="top"
+                                                    >
+                                                      <a
+                                                        target="_blank"
+                                                        href="https://www.pinterest.com/StripoEmail/"
+                                                        ><img
+                                                          src="https://tlr.stripocdn.email/content/assets/img/social-icons/circle-colored/pinterest-circle-colored.png"
+                                                          alt="P"
+                                                          title="Pinterest"
+                                                          width="32"
+                                                      /></a>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="esd-block-text es-p20t"
+                                            >
+                                              <p>
+                                                Вы получили это электронное
+                                                письмо, потому что посетили наш
+                                                сайт или спросили нас о
+                                                регулярном информационном
+                                                бюллетене.
+                                              </p>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td
+                                              align="center"
+                                              class="esd-block-text es-p15t"
+                                            >
+                                              <p>
+                                                Политика конфиденциальности |
+                                                Отписаться
+                                              </p>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
