@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
-import ChatBot from 'react-simple-chatbot'
-import { ThemeProvider } from 'styled-components'
-import Post from './Post'
-import Link from './Link'
-import Link2 from './Link2'
-import Link3 from './Link3'
-import './App.css'
-import Link4 from './Link4'
+import React, { useState } from 'react';
+import ChatBot from 'react-simple-chatbot';
+import { ThemeProvider } from 'styled-components';
+import Post from './Post';
+import Link from './Link';
+import Link2 from './Link2';
+import Link3 from './Link3';
+import './ChatBot.css';
+import Link4 from './Link4';
 const theme = {
   background: '#fdfeff',
   fontFamily: 'Poppins',
@@ -16,8 +16,8 @@ const theme = {
   botBubbleColor: '#208de2',
   botFontColor: '#fff',
   userBubbleColor: '#fff',
-  userFontColor: '#1c3f65',
-}
+  userFontColor: '#1c3f65'
+};
 
 // all available config props
 const config = {
@@ -25,18 +25,18 @@ const config = {
   height: '400px',
   hideUserAvatar: true,
   placeholder: 'Type your response.',
-  headerTitle: 'ChatBot',
-}
+  headerTitle: 'ChatBot'
+};
 
-const Chatbot = (props) => {
-  let [showChat, setShowChat] = useState(false)
+const Chatbot = () => {
+  let [showChat, setShowChat] = useState(false);
 
   const startChat = () => {
-    setShowChat(true)
-  }
+    setShowChat(true);
+  };
   const hideChat = () => {
-    setShowChat(false)
-  }
+    setShowChat(false);
+  };
 
   return (
     <ThemeProvider theme={theme}>
@@ -48,31 +48,30 @@ const Chatbot = (props) => {
             {
               id: 'welcome',
               message: 'Hello!',
-              trigger: 'q-firstname',
+              trigger: 'q-firstname'
             },
             /* Paste */
             {
               id: 'q-firstname',
               message: 'What is your  name?',
-              trigger: 'firstname',
+              trigger: 'firstname'
             },
             {
               id: 'firstname',
               user: true,
               validator: (value) => {
                 if (/^[A-Za-z]+$/.test(value)) {
-                  return true
+                  return true;
                 } else {
-                  return 'Please input alphabet characters only.'
+                  return 'Please input alphabet characters only.';
                 }
               },
-              trigger: 'rmcbot',
+              trigger: 'rmcbot'
             },
             {
               id: 'rmcbot',
-              message:
-                'Hi,{previousValue} I am Connectify Bot! Where can I help you? ',
-              trigger: 'qtype',
+              message: 'Hi,{previousValue} I am Connectify Bot! Where can I help you? ',
+              trigger: 'qtype'
             },
             {
               id: 'qtype',
@@ -80,40 +79,40 @@ const Chatbot = (props) => {
                 { value: 1, label: 'Instagram?', trigger: '4' },
                 { value: 2, label: ' LinkedIn?', trigger: '3' },
                 { value: 3, label: 'FaceBook?', trigger: '5' },
-                { value: 4, label: 'Twitter?', trigger: '6' },
-              ],
+                { value: 4, label: 'Twitter?', trigger: '6' }
+              ]
             },
             {
               id: '3',
-              component:<Link3 />,
-              trigger: 'qtype',
+              component: <Link3 />,
+              trigger: 'qtype'
             },
             {
               id: '4',
               component: <Link />,
-              trigger: 'qtype',
+              trigger: 'qtype'
             },
             {
               id: '5',
               component: <Link4 />,
-              trigger: 'qtype',
+              trigger: 'qtype'
             },
             {
               id: '6',
               component: <Link2 />,
-              trigger: 'q-submit',
+              trigger: 'q-submit'
             },
             {
               id: 'q-submit',
               message: 'Do you have any other questions !?',
-              trigger: 'submit',
+              trigger: 'submit'
             },
             {
               id: 'submit',
               options: [
                 { value: 'y', label: 'Yes', trigger: 'no-submit' },
-                { value: 'n', label: 'No', trigger: 'end-message' },
-              ],
+                { value: 'n', label: 'No', trigger: 'end-message' }
+              ]
             },
             {
               id: 'no-submit',
@@ -121,15 +120,15 @@ const Chatbot = (props) => {
                 { value: 1, label: 'Instagram?', trigger: '4' },
                 { value: 2, label: ' LinkedIn?', trigger: '3' },
                 { value: 3, label: 'FaceBook?', trigger: '5' },
-                { value: 4, label: 'Twitter?', trigger: '6' },
-              ],
+                { value: 4, label: 'Twitter?', trigger: '6' }
+              ]
             },
             {
               id: 'end-message',
               component: <Post />,
               asMessage: true,
-              end: true,
-            },
+              end: true
+            }
           ]}
           {...config}
         />
@@ -146,7 +145,7 @@ const Chatbot = (props) => {
         )}
       </div>
     </ThemeProvider>
-  )
-}
+  );
+};
 
-export default Chatbot
+export default Chatbot;

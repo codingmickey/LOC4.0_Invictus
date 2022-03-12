@@ -1,11 +1,13 @@
-import React from 'react'
-import '../../App.css'
-import { Table } from 'react-bootstrap'
+import React from 'react';
+import './ChatBot.css';
+import { Table } from 'react-bootstrap';
 
 const Link4 = () => {
   return (
     <div>
-      <h2 style={{color:"black"}}>Connect businesses and people more efficiently using Connectify</h2>
+      <h2 style={{ color: 'black' }}>
+        Connect businesses and people more efficiently using Connectify
+      </h2>
       <Table striped bordered hover variant="dark">
         <thead>
           <tr>
@@ -20,9 +22,9 @@ const Link4 = () => {
               <a
                 style={{ textDecoration: 'none' }}
                 href="https://www.facebook.com/"
-                target="_blank"
-              >
-               Create an Account
+                rel="noreferrer"
+                target="_blank">
+                Create an Account
               </a>
             </td>
           </tr>
@@ -31,9 +33,9 @@ const Link4 = () => {
             <td>
               <a
                 style={{ textDecoration: 'none' }}
+                rel="noreferrer"
                 href="http://www.rmc.gov.in/rmcwebsite/birth_death_certificate.aspx"
-                target="_blank"
-              >
+                target="_blank">
                 Display trending hashtags
               </a>
             </td>
@@ -44,16 +46,16 @@ const Link4 = () => {
               <a
                 style={{ textDecoration: 'none' }}
                 href="http://www.rmc.gov.in/rmcwebsite/tax_new.aspx"
-                target="_blank"
-              >
-               Display trending songs
+                rel="noreferrer"
+                target="_blank">
+                Display trending songs
               </a>
             </td>
           </tr>
         </tbody>
       </Table>
     </div>
-  )
-}
+  );
+};
 
-export default Link4
+export default Link4;

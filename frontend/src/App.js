@@ -5,6 +5,7 @@ import Onboarding from './components/Home/Onboarding/Onboarding';
 import Faq from './components/Faqs';
 import Analytics from './components/Analytics';
 import Hero from './components/Home/Hero/Hero';
+import Chatbot from './chatbot/Chatbot';
 
 export const themeOptions = {
   palette: {
@@ -66,6 +67,7 @@ function App() {
         </div>
       </Router>
       {/* </ThemeProvider> */}
+      <Chatbot />
     </div>
   );
 }
