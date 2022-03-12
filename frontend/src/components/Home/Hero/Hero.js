@@ -7,7 +7,7 @@ const useStyles = createStyles((theme) => ({
     backgroundImage:
       'url(https://images.unsplash.com/photo-1622549037543-49cf1ca0babc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)',
     backgroundSize: 'cover',
-    backgroundPosition: 'center',
+    backgroundPosition: 'center'
   },
 
   container: {
@@ -22,8 +22,8 @@ const useStyles = createStyles((theme) => ({
 
     [theme.fn.smallerThan('sm')]: {
       height: 500,
-      paddingBottom: theme.spacing.xl * 3,
-    },
+      paddingBottom: theme.spacing.xl * 3
+    }
   },
 
   title: {
@@ -34,13 +34,13 @@ const useStyles = createStyles((theme) => ({
 
     [theme.fn.smallerThan('sm')]: {
       fontSize: 40,
-      lineHeight: 1.2,
+      lineHeight: 1.2
     },
 
     [theme.fn.smallerThan('xs')]: {
       fontSize: 28,
-      lineHeight: 1.3,
-    },
+      lineHeight: 1.3
+    }
   },
 
   description: {
@@ -49,20 +49,20 @@ const useStyles = createStyles((theme) => ({
 
     [theme.fn.smallerThan('sm')]: {
       maxWidth: '100%',
-      fontSize: theme.fontSizes.sm,
-    },
+      fontSize: theme.fontSizes.sm
+    }
   },
 
   control: {
     marginTop: theme.spacing.xl * 1.5,
 
     [theme.fn.smallerThan('sm')]: {
-      width: '100%',
-    },
-  },
+      width: '100%'
+    }
+  }
 }));
 
-export default function HeroContentLeft() {
+export default function Hero() {
   const { classes } = useStyles();
 
   return (
@@ -75,8 +75,8 @@ export default function HeroContentLeft() {
       <Container className={classes.container}>
         <Title className={classes.title}>Connectify</Title>
         <Text className={classes.description} size="xl" mt="xl">
-         One Stop Shop for all your Social media handles.
-         Get the best in class <i>Analytics and Trends</i>
+          One Stop Shop for all your Social media handles. Get the best in class{' '}
+          <i>Analytics and Trends</i>
         </Text>
 
         <Button variant="gradient" size="xl" radius="xl" className={classes.control}>
