@@ -26,6 +26,8 @@ function App() {
     <div className="App">
       {/* <ThemeProvider theme={themeOptions}> */}
       <Option />
+      <Hero />
+      <Faqs />
       {/* </ThemeProvider> */}
     </div>
   );
