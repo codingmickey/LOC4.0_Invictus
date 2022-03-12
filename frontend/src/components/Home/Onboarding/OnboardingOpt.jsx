@@ -26,7 +26,7 @@ const useStyles = makeStyles(() => ({
     }
   },
   card: ({ color }) => ({
-    minWidth: 220,
+    minWidth: 255,
     borderRadius: 16,
     boxShadow: 'none',
     '&:hover': {
@@ -42,7 +42,7 @@ const useStyles = makeStyles(() => ({
   title: {
     fontWeight: '500',
     fontFamily: 'Poppins',
-    fontSize: '2.2rem',
+    fontSize: '2rem',
     color: '#fff',
     textAlign: 'center'
   },
@@ -52,7 +52,7 @@ const useStyles = makeStyles(() => ({
     opacity: 0.8,
     marginTop: '1rem',
     fontWeight: 500,
-    fontSize: '1.25rem',
+    fontSize: '1rem',
     textAlign: 'center'
   }
 }));
@@ -77,48 +77,24 @@ const CustomCard = ({ classes, image, title, subtitle }) => {
 export const SolidGameCardDemo = React.memo(function SolidGameCard() {
   const gridStyles = useGridStyles();
   const styles = useStyles({ color: '#f5655b' });
-  const styles2 = useStyles({ color: '#28aae1' });
-  const styles3 = useStyles({ color: '#0274b3' });
-  const styles4 = useStyles({ color: '#4267b2' });
+  const styles2 = useStyles({ color: '#00CA3C' });
   return (
     <>
       <Grid classes={gridStyles} container spacing={4} wrap={'nowrap'}>
         <Grid item>
           <CustomCard
             classes={styles}
-            title={'Instagram'}
-            subtitle={'Business account'}
-            image={
-              'https://img.freepik.com/free-vector/instagram-logo_1199-122.jpg?size=338&ext=jpg'
-            }
+            title={'Publishing'}
+            subtitle={'Plan, create, and schedule content'}
+            image={'https://buffer-ui.s3.amazonaws.com/products/publish-card_%402x.jpeg'}
           />
         </Grid>
         <Grid item>
           <CustomCard
             classes={styles2}
-            title={'Twitter'}
-            subtitle={'Profile'}
-            image={
-              'https://seeklogo.com/images/T/twitter-2012-negative-logo-5C6C1F1521-seeklogo.com.png'
-            }
-          />
-        </Grid>
-        <Grid item>
-          <CustomCard
-            classes={styles3}
-            title={'LinkedIn'}
-            subtitle={'Page'}
-            image={
-              'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png'
-            }
-          />
-        </Grid>
-        <Grid item>
-          <CustomCard
-            classes={styles4}
-            title={'Facebook'}
-            subtitle={'Page or group'}
-            image={'https://www.facebook.com/images/fb_icon_325x325.png'}
+            title={'Analyze'}
+            subtitle={'Analyze your profile and grow!'}
+            image={'https://buffer-ui.s3.amazonaws.com/products/analyze-card_%402x.jpeg'}
           />
         </Grid>
       </Grid>

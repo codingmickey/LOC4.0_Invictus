@@ -12,6 +12,12 @@ code {
 }
 
 .options-text {
-  margin: 5rem 0;
+  margin: 5rem 0 4rem;
+  text-align: center;
+}
+.option-footer {
+  text-align: center;
+}
+.onboarding-root {
   text-align: center;
 }
