@@ -29,19 +29,19 @@ const storage = multer.diskStorage({
     cb(
       null,
       file.fieldname +
-        '-' +
-        a.getDate() +
-        import(a.getMonth() + 1) +
-        '-' +
-        a.getFullYear() +
-        '-' +
-        a.getHours() +
-        '.' +
-        a.getMinutes() +
-        '.' +
-        a.getSeconds() +
-        ' ' +
-        path.extname(file.originalname)
+      '-' +
+      a.getDate() +
+      import(a.getMonth() + 1) +
+      '-' +
+      a.getFullYear() +
+      '-' +
+      a.getHours() +
+      '.' +
+      a.getMinutes() +
+      '.' +
+      a.getSeconds() +
+      ' ' +
+      path.extname(file.originalname)
     );
   },
 });
@@ -101,7 +101,7 @@ const signupUser = async (req, res) => {
       templateVars: {
         emailAddress: signpuEmail,
         otp: OTP,
-        resetLink:resetLink
+        resetLink: resetLink
       },
     });
     res.status(200).send({
@@ -135,7 +135,7 @@ const verifyOtp = async (req, res) => {
     const rightOtpfind = otpHolder[otpHolder.length - 1];
     const validUser = await bcrypt.compare(otp, rightOtpfind.otp);
     if (rightOtpfind.email == signpuEmail && validUser) {
-      const user = new Users({ email: email, password: pass });
+      const user = new Users({ email: email });
       await user.save();
       await userSignUp({
         from: process.env.EMAIL,
@@ -144,8 +144,8 @@ const verifyOtp = async (req, res) => {
         template: 'signUp',
         templateVars: {
           emailAddress: email,
-          name:"user",
-          resetLink:resetLink
+          name: "user",
+          resetLink: resetLink
         },
       });
       const token = await user.generateAuthToken();
@@ -174,14 +174,14 @@ const verifyOtp = async (req, res) => {
 };
 
 let loginEmail;
-const userLogin=async(req,res)=>{
-  loginEmail=req.body.email;
+const userLogin = async (req, res) => {
+  loginEmail = req.body.email;
   try {
-    const user=await Users.find({email:loginEmail})
+    const user = await Users.find({ email: loginEmail })
     if (!user) {
       return res.status(400).json({
-        success:false,
-        message:'User not found',
+        success: false,
+        message: 'User not found',
       })
     }
     const OTP = otpGenerator.generate(6, {
@@ -211,8 +211,8 @@ const userLogin=async(req,res)=>{
     });
   } catch (error) {
     res.status(400).json({
-      success:false,
-      message:error.message
+      success: false,
+      message: error.message
     })
   }
 }
@@ -232,10 +232,10 @@ const verifyLoginOtp = async (req, res) => {
     }
     const rightOtpfind = otpHolder[otpHolder.length - 1];
     const validUser = await bcrypt.compare(otp, rightOtpfind.otp);
-    const user=await Users.find({email:loginEmail})
+    const user = await Users.find({ email: loginEmail })
     console.log(user);
     if (rightOtpfind.email == loginEmail && validUser) {
-           const token = await user[0].generateAuthToken();
+      const token = await user[0].generateAuthToken();
       const deleteOtp = await Otp.deleteMany({
         email: rightOtpfind.email,
       });
@@ -359,12 +359,12 @@ const showMyProfile = async (req, res) => {
 //   }
 // };
 
-const updateUser=async(req,res)=>{
+const updateUser = async (req, res) => {
   try {
-    const username=req.body.username;
+    const username = req.body.username;
 
   } catch (error) {
-    
+
   }
 }
 // Removing your account
@@ -386,7 +386,7 @@ const removeMe = async (req, res) => {
 
 
 
-  
+
 
 export {
   signupUser,

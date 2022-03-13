@@ -1,6 +1,8 @@
 import React from 'react';
 import { createStyles, Overlay, Container, Title, Button, Text } from '@mantine/core';
 
+import Navbar from '../../Navbar';
+
 const useStyles = createStyles((theme) => ({
   hero: {
     position: 'relative',
@@ -72,6 +74,7 @@ export default function Hero() {
         opacity={1}
         zIndex={0}
       />
+      <Navbar />
       <Container className={classes.container}>
         <Title className={classes.title}>Connectify</Title>
         <Text className={classes.description} size="xl" mt="xl">

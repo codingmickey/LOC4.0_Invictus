@@ -2,10 +2,15 @@ import React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
+// import DashBoard from './Dashboard';
+
+import Navbar from './Navbar';
 
 const Analytics = () => {
   return (
     <React.Fragment>
+      <Navbar />
+      {/* <DashBoard /> */}
       <CssBaseline />
       <div>
         <h1 style={{ padding: '5% 0 0 12%', textAlign: 'left' }}>Good Afternoon</h1>

@@ -7,10 +7,13 @@ import cookieParser from 'cookie-parser';
 import cookieSession from 'cookie-session';
 import connectDB from './config/db.js';
 import usersRoute from './routes/Users.js';
-
+import cors from 'cors'
 dotenv.config();
 await connectDB();
 const app = express();
+app.use(cors({
+  origin: '*',
+}))
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(

@@ -26,7 +26,6 @@ const userSchema = new Schema(
     },
     password: {
       type: String,
-      required: true,
       trim: true,
       minlength: 7,
     },
@@ -37,25 +36,25 @@ const userSchema = new Schema(
       type: Boolean,
       default: false,
     },
-    instagramUserName:{
-      type:String,
-  },
-    instagramId:{
-      type:String,
+    instagramUserName: {
+      type: String,
     },
-    twitterUserName:{
-      type:String,
+    instagramId: {
+      type: String,
     },
-    twitterId:{
-      type:String,
+    twitterUserName: {
+      type: String,
     },
-    linkedinUserName:{
-      type:String,
+    twitterId: {
+      type: String,
     },
-    likedIndId:{
-      type:String,
+    linkedinUserName: {
+      type: String,
+    },
+    likedIndId: {
+      type: String,
     }
-},
+  },
   { timestamps: true }
 );
 
