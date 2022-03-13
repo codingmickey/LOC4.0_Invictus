@@ -2,6 +2,7 @@ import React from 'react';
 import { createStyles, Overlay, Container, Title, Button, Text } from '@mantine/core';
 
 import Navbar from '../../Navbar';
+import { Link } from 'react-router-dom';
 
 const useStyles = createStyles((theme) => ({
   hero: {
@@ -81,10 +82,11 @@ export default function Hero() {
           One Stop Shop for all your Social media handles. Get the best in class{' '}
           <i>Analytics and Trends</i>
         </Text>
-
-        <Button variant="gradient" size="xl" radius="xl" className={classes.control}>
-          Get started
-        </Button>
+        <Link to="/options">
+          <Button variant="gradient" size="xl" radius="xl" className={classes.control}>
+            Get started
+          </Button>
+        </Link>
       </Container>
     </div>
   );

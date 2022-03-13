@@ -8,6 +8,7 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import { useFourThreeCardMediaStyles } from '@mui-treasury/styles/cardMedia/fourThree';
+import { Link } from 'react-router-dom';
 
 const useGridStyles = makeStyles(({ breakpoints }) => ({
   root: {
@@ -84,42 +85,50 @@ export const SolidGameCardDemo = React.memo(function SolidGameCard() {
     <>
       <Grid classes={gridStyles} container spacing={4} wrap={'nowrap'}>
         <Grid item>
-          <CustomCard
-            classes={styles}
-            title={'Instagram'}
-            subtitle={'Business account'}
-            image={
-              'https://img.freepik.com/free-vector/instagram-logo_1199-122.jpg?size=338&ext=jpg'
-            }
-          />
+          <Link to="/insta-log">
+            <CustomCard
+              classes={styles}
+              title={'Instagram'}
+              subtitle={'Business account'}
+              image={
+                'https://img.freepik.com/free-vector/instagram-logo_1199-122.jpg?size=338&ext=jpg'
+              }
+            />
+          </Link>
         </Grid>
         <Grid item>
-          <CustomCard
-            classes={styles2}
-            title={'Twitter'}
-            subtitle={'Profile'}
-            image={
-              'https://seeklogo.com/images/T/twitter-2012-negative-logo-5C6C1F1521-seeklogo.com.png'
-            }
-          />
+          <Link to="/twit-log">
+            <CustomCard
+              classes={styles2}
+              title={'Twitter'}
+              subtitle={'Profile'}
+              image={
+                'https://seeklogo.com/images/T/twitter-2012-negative-logo-5C6C1F1521-seeklogo.com.png'
+              }
+            />
+          </Link>
         </Grid>
         <Grid item>
-          <CustomCard
-            classes={styles3}
-            title={'LinkedIn'}
-            subtitle={'Page'}
-            image={
-              'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png'
-            }
-          />
+          <Link to="/insta-log">
+            <CustomCard
+              classes={styles3}
+              title={'LinkedIn'}
+              subtitle={'Page'}
+              image={
+                'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png'
+              }
+            />
+          </Link>
         </Grid>
         <Grid item>
-          <CustomCard
-            classes={styles4}
-            title={'Facebook'}
-            subtitle={'Page or group'}
-            image={'https://www.facebook.com/images/fb_icon_325x325.png'}
-          />
+          <Link to="/insta-log">
+            <CustomCard
+              classes={styles4}
+              title={'Facebook'}
+              subtitle={'Page or group'}
+              image={'https://www.facebook.com/images/fb_icon_325x325.png'}
+            />
+          </Link>
         </Grid>
       </Grid>
     </>

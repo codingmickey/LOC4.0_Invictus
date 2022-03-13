@@ -77,7 +77,8 @@ const CustomCard = ({ classes, image, title, subtitle }) => {
 export const SolidGameCardDemo = React.memo(function SolidGameCard() {
   const gridStyles = useGridStyles();
   const styles = useStyles({ color: '#f5655b' });
-  const styles2 = useStyles({ color: '#00CA3C' });
+  const styles2 = useStyles({ color: '#0ACDFF' });
+  const styles3 = useStyles({ color: '#00CA3C' });
   return (
     <>
       <Grid classes={gridStyles} container spacing={4} wrap={'nowrap'}>
@@ -92,6 +93,14 @@ export const SolidGameCardDemo = React.memo(function SolidGameCard() {
         <Grid item>
           <CustomCard
             classes={styles2}
+            title={'Make content'}
+            subtitle={'Create 3 in 1 content in one click'}
+            image={'https://buffer-ui.s3.amazonaws.com/products/start-page-card_%402x.jpeg'}
+          />
+        </Grid>
+        <Grid item>
+          <CustomCard
+            classes={styles3}
             title={'Analyze'}
             subtitle={'Analyze your profile and grow!'}
             image={'https://buffer-ui.s3.amazonaws.com/products/analyze-card_%402x.jpeg'}

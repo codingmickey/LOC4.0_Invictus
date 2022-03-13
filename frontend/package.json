@@ -28,6 +28,7 @@
     "react-scripts": "5.0.0",
     "react-simple-chatbot": "^0.6.1",
     "react-social-login-buttons": "^3.6.0",
+    "react-tweet": "^1.7.1",
     "web-vitals": "^2.1.4"
   },
   "lint": "eslint .",

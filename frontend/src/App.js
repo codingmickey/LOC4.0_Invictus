@@ -10,6 +10,7 @@ import Register from './components/Register';
 import Signup from './components/Signup';
 import Login from './components/Login';
 import Otp from './components/Otp';
+import Create from './components/Create/Create';
 
 export const themeOptions = {
   palette: {
@@ -45,6 +46,7 @@ function App() {
           <Route exact path="/onboarding" element={<Onboarding />} />
           <Route exact path="/analytics" element={<Analytics />} />
           <Route exact path="/faq" element={<Faq />} />
+          <Route exact path="/create" element={<Create />} />
         </Routes>
 
         {/* </ThemeProvider> */}
