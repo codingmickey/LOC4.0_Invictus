@@ -4,7 +4,7 @@ import { createContext, useContext, useState } from 'react';
 const Insta = createContext();
 
 const Context1 = ({ children }) => {
-    const [instaCheck, setInstaCheck] = useState(false)
+    const [instaCheck, setInstaCheck] = useState(true)
 
     return (
         <Insta.Provider value={{ instaCheck, setInstaCheck }}>
