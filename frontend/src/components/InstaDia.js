@@ -4,12 +4,13 @@ import { Box, Button, Divider, FormControl, TextField, Typography } from '@mui/m
 import Dialog from '@mui/material/Dialog';
 import { withStyles } from '@mui/styles';
 import { useState } from 'react';
-import { InstaCheck } from '../Context';
-import axios from "axios";
+import { InstaCheck } from '../Context1';
+// import { accountPublicData } from '../api/Insta';
+import axios from 'axios'
 
 const styles = {
     dialog: {
-        height: '65%',
+        height: '30%',
         // margin: '60%',
         boxShadow: 'none !important',
         borderRadius: '6px !important',
@@ -19,7 +20,7 @@ const styles = {
 const Insta = ({ classes }) => {
 
     const { instaCheck, setInstaCheck } = InstaCheck();
-    const [username, setUsername] = useState()
+    const [username, setUsername] = useState('')
 
     const handleChange = (e) => {
         const { value } = e.target
@@ -28,21 +29,20 @@ const Insta = ({ classes }) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
-        let reqOptions = {
-            url: "http://localhost:3001/api/artstore/users/register",
-            method: "POST",
-            "Content-Type": "application/json",
-            data: ({
-
-            }),
-        }
-        console.log(reqOptions)
+        let options = {
+            method: 'GET',
+            url: 'https://instagram-data4.p.rapidapi.com/api/account/public/' + username,
+            headers: {
+                'x-rapidapi-key': '3ea1f76d19msh440d0c5afc3577cp12bcb8jsnff1769f87195',
+                'x-rapidapi-host': 'instagram-data4.p.rapidapi.com'
+            }
+        };
         try {
-            const response = await axios.request(reqOptions)
-            console.log(response.data)
-            if (response.data.success) {
 
+            const response = await axios.request(options)
+            console.log(response)
+            if (response) {
+                console.log(response);
                 setInstaCheck(false)
                 setUsername('')
             }
@@ -74,17 +74,7 @@ const Insta = ({ classes }) => {
                     </Typography>
                     <form onSubmit={handleSubmit}>
                         <FormControl fullWidth={true} >
-                            <TextField
-                                id="name"
-                                label="Full Name"
-                                variant="outlined"
-                                value={username}
-                                onChange={handleChange}
-                                error={false}
-                                sx={{
-                                    marginY: 3
-                                }}
-                            />
+
                             <TextField
                                 id="username"
                                 label="Username"

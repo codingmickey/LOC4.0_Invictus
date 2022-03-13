@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React, { useState } from 'react';
 import ChatBot from 'react-simple-chatbot';
 import { ThemeProvider } from 'styled-components';
@@ -135,7 +136,11 @@ const Chatbot = () => {
       </div>
       <div>
         {!showChat ? (
-          <button className="btn" onClick={() => startChat()}>
+          <button className="btn" onClick={() => {
+            return (
+              startChat()
+            )
+          }}>
             <i className="fa fa-minus"></i>
           </button>
         ) : (
